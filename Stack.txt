@@ -1,0 +1,22 @@
+REAM Site
+
+Vite - Add efficiency and speed to UI
+
+Node.js - running the client and server, managing packages
+    --> Node Package Manager(npm) is strictly a package manager that installs, updates, and manages dependendcies --> (pre-built pieces of code)
+
+React.js - make UI easier, efficient, and clean
+
+JS - functionality and backend
+
+CSS - Styles
+
+HTML - website UI
+
+Postman - API testing
+
+Express - make Backend easier, efficient, and clean
+
+MongoDB - store, retrieve, mutate data
+
+(need service for rendering)
