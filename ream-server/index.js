@@ -1,0 +1,21 @@
+const express = require('express');
+const app = express();
+const PORT = 3000;
+
+// Middleware to parse JSON
+app.use(express.json());
+
+// Basic route
+app.get('/', (req, res) => {
+  res.send('Hello, world!');
+});
+
+//error handler
+app.use((req, res) => {
+  res.status(404).json({ error: 'Not Found' });
+});
+
+// Start the server
+app.listen(PORT, () => {
+  console.log(`Server running on http://localhost:${PORT}`);
+});
