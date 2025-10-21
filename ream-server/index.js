@@ -1,18 +1,28 @@
 const express = require('express');
+const cors = require('cors');
+const articleRouter = require('./routes/articles.js'); //importing the router articles.js
+
 const app = express();
 const PORT = 3000;
 
-// Middleware to parse JSON
+app.use(cors());
 app.use(express.json());
 
 
 
-//error handler
-app.use((req, res) => {
-  res.status(404).json({ error: 'Not Found' });
+
+app.use('/articles', articleRouter);
+
+app.use('/', (req, res) => {
+  res.send('Hello, world!');
 });
 
 // Start the server
 app.listen(PORT, () => {
   console.log(`Server running on http://localhost:${PORT}`);
+});
+
+//error handler
+app.use((req, res) => {
+  res.status(404).json({ error: 'Not Found' });
 });
