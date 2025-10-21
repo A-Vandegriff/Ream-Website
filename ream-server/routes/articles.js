@@ -1,4 +1,4 @@
-const express = require('express');
+import express from 'express';
 const router = express.Router();
 
 let cards = [
@@ -9,4 +9,4 @@ let cards = [
 router.get('/', (req, res) => {
   res.json(cards);
 });
-module.exports = router;
+export default router;
