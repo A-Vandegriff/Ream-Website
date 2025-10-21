@@ -5,10 +5,7 @@ const PORT = 3000;
 // Middleware to parse JSON
 app.use(express.json());
 
-// Basic route
-app.get('/', (req, res) => {
-  res.send('Hello, world!');
-});
+
 
 //error handler
 app.use((req, res) => {
