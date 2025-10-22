@@ -3,7 +3,7 @@ import  express from 'express';
 import  cors from 'cors';
 import  router  from './routes/articles.js'; //importing the router articles.js
 
-import  userRouter  from './routes/user,routes.js';
+import  userRouter  from './routes/user.routes.js';
 import  subscriptionRouter  from './routes/subscription.routes.js';
 import  authRouter  from './routes/auth.routes.js';
 
